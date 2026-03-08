@@ -1,0 +1,118 @@
+
+/* Page title */
+
+h1{
+text-align:center;
+margin-top:40px;
+color:#2c3e50;
+}
+
+.subtitle{
+text-align:center;
+color:#666;
+margin-bottom:40px;
+}
+
+
+/* Domain grid layout */
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+
+/* Career domain cards */
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:all 0.25s ease;
+border-top:5px solid #4ca1af;
+}
+
+
+/* Card hover */
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+/* Card titles */
+
+.card h2{
+color:#2c3e50;
+margin-bottom:10px;
+}
+
+
+/* Section headings */
+
+.card h3{
+margin-top:18px;
+color:#34495e;
+font-size:16px;
+}
+
+
+/* Paragraph inside cards */
+
+.card p{
+font-size:14px;
+line-height:1.6;
+color:#555;
+}
+
+
+/* Skills and roles list */
+
+.card ul{
+margin-top:8px;
+padding-left:20px;
+}
+
+.card li{
+margin-bottom:8px;
+font-size:14px;
+}
+
+
+/* Learning links */
+
+.card a{
+margin-left:10px;
+font-size:13px;
+color:#4ca1af;
+background:#eef6f7;
+padding:3px 8px;
+border-radius:5px;
+text-decoration:none;
+transition:0.2s;
+}
+
+
+/* Hover effect for links */
+
+.card a:hover{
+background:#4ca1af;
+color:white;
+}
+
+
+/* Responsive spacing */
+
+@media (max-width:768px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+}
